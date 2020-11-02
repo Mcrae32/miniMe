@@ -49,19 +49,19 @@ body.mini-page {
 
 .mini-slid {
     background: url(../images/video/slid_mini_1.jpg);
-    background-position: 50% 0%; text-align: center;
+    background-position: 14% 0%; text-align: center;
 }
 .mini-slid.slid2 {
     background: url(../images/video/slid_mini_2.jpg);
-    background-position: 50% 0%; text-align: center;
+    background-position: 69% 0%; text-align: center;
 }
 .mini-slid.slid3 {
     background: url(../images/video/slid_mini_3.jpg);
-    background-position: 50% 0%; text-align: center;
+    background-position: 85% 0%; text-align: center;
 }
 .mini-slid.slid4 {
     background: url(../images/video/slid_mini_4.jpg);
-    background-position: 50% 0%; text-align: center;
+    background-position: 11% 0%; text-align: center;
 }
 
 .button_slider {
@@ -362,7 +362,24 @@ footer {
     color: #323232;
 }
 
+@media (max-width: 1499px) {
+    .rev-brand-wrap {
+        background-position: 120% top, left bottom;
+    }
+
+    .brand-reviews p {
+        font-size: 1.3em;
+        line-height: 1.2em;
+    Ъ
+}
+
 @media (max-width: 1199px) {
+    .rev-brand-wrap {
+        background: url(../images/miniMe_02.jpg);
+        background-position: left top;
+        background-size: cover;
+    }
+
 
   .brand-reviews p {
     margin-top: 2em;
@@ -373,10 +390,6 @@ footer {
     padding-right: 15px;
     max-width: 1170px;*/
   }
-
-    .rev-brand-wrap {
-        background-position: -40% 100%, 140% 0%;
-    }
 
 }
 
@@ -389,7 +402,7 @@ footer {
     }
     .brand-reviews p {
         margin-top: 1em;
-        text-align: center;
+        text-align: left;
     }
 
     .cs-style-4 figure:hover img, .cs-style-4 figure.cs-hover img {
@@ -409,7 +422,7 @@ footer {
     }
 
     .rev-brand-wrap {
-        background-position: -150% 100%, 250% 0%;
+        background-position: 0% 100%;
     }
 
     #where_buy {
@@ -419,12 +432,38 @@ footer {
     .mini-page .map {
         height: 450px;
     }
+
+    .filter-block, .filter-block-mob {
+        margin-top: 3em;
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 767px) {
+    .mini-page h3 {
+        font-size: 1.5em;
+    }
+
+    .mini-page h3::after {
+        display: none;
+    }
+
+    .mini-page .assortment {
+        padding: 2.5em 0 1.5em;
+    }
+
     .filter-block {
         flex-direction: column;
         align-items: center;
+    }
+
+    .filter-block, .filter-block-mob {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
     }
 
     .filter-block .read-more.news {
@@ -445,14 +484,33 @@ footer {
         padding-top: 14rem;
     }
 
-    .rev-brand-wrap {
-        background: none;
-    }
-}
-
-@media (max-width: 767px) {
     .vologda-plombir-page .map {
         height: 134.8px;
         padding-top: 130px;
     }
+
+    .rev-brand-wrap {
+        background: url(../images/miniMe_02.jpg);
+        background-size: auto;
+        background-position: left top;
+    }
+
+    .brand-reviews p {
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }
+
+    .brand-reviews {
+        padding-top: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .mini-page #where_buy {
+        padding-bottom: 5em;
+    }
+}
+
+@media (max-width: 767px) {
+    
+
 }
